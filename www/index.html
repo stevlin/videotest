@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Device Ready Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+                <script type="text/javascript" charset="utf-8" src="js/StreamingMedia.js"></script>
+
+       <!--  <link  rel="stylesheet" href="css/index.css" type='text/css'>-->
+
+
+  </head>
+  <body onload="app.initialize()">
+
+             
+  <p>
+  <button class="btn" onclick="app.getCamera()">Start Camera</button>
+  <img id="image" width="200" height="300">
+  </p>
+  <p><button onclick="app.playVideo()">Play Video</button> <button onclick="app.pauseVideo()">Pause Video</button></p>
+  
+
+                
+
+  
+    <video id="video1" width="400" controls>
+  <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+             
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
